@@ -23,5 +23,6 @@ Run the app:
    npm run start
    ~~~~	
    
-Hit http://localhost:3000 to view the UI.
+Hit http://localhost:3000 to check if server is running.
+Hit http://localhost:3000/searchFlights/{{origin}}/{{destination}}
 To change the port you can edit the port property in sever.js file or set environment variable 'FLIGHT_HUNT_PORT' to required value.
