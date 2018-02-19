@@ -25,4 +25,5 @@ Run the app:
    
 Hit http://localhost:3000 to check if server is running.
 Hit http://localhost:3000/searchFlights/{{origin}}/{{destination}}
+For example: http://localhost:3000/searchFlights/LAX/LAS
 To change the port you can edit the port property in sever.js file or set environment variable 'FLIGHT_HUNT_PORT' to required value.
