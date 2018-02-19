@@ -1,0 +1,51 @@
+{
+  "provider1": [{
+	   "origin": "LAX",
+	    "departureTime": "6/23/2014 13:30:00",
+	    "destination": "LAS",
+	    "arrivalTime": "6/23/2014 14:40:00",
+	    "price": "$151.00"
+    },
+    {
+	     "origin": "YYZ",
+	     "departureTime": "6/23/2014 13:30:00",
+	     "destination": "YYC",
+	     "arrivalTime": "6/15/2014 8:54:00",
+	     "price": "$578.00"
+    },
+    {
+	     "origin": "YYZ",
+	     "departureTime": "6/05/2014 13:30:00",
+	     "destination": "YYC",
+	     "arrivalTime": "6/23/2014 8:54:00",
+	     "price": "$608.00"
+    },
+    {
+  	   "origin": "LAS",
+  	    "departureTime": "6/19/2014 13:30:00",
+  	    "destination": "LAX",
+  	    "arrivalTime": "6/23/2014 14:40:00",
+  	    "price": "$151.00"
+      }],
+    "provider2": [{
+    	   "origin": "LAS",
+    	    "departureTime": "6/23/2014 13:30:00",
+    	    "destination": "LAX",
+    	    "arrivalTime": "6/23/2014 14:40:00",
+    	    "price": "$151.00"
+        },
+        {
+    	     "origin": "YYZ",
+    	     "departureTime": "6/23/2014 13:30:00",
+    	     "destination": "YYC",
+    	     "arrivalTime": "6/15/2014 8:54:00",
+    	     "price": "$578.00"
+      }],
+      "provider3": [{
+      	   "origin": "LAS",
+      	    "departureTime": "6/23/2014 13:30:00",
+      	    "destination": "LAX",
+      	    "arrivalTime": "6/23/2014 14:40:00",
+      	    "price": "$151.00"
+          }]
+}

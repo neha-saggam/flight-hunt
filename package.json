@@ -1,0 +1,19 @@
+{
+  "name": "flightHuntApi",
+  "version": "1.0.0",
+  "description": "API which allows user to search flights given origin and destination. Also, filters the list of flights based on price first and departure next",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neha-saggam/flight-hunt.git"
+  },
+  "author": "Neha Saggam",
+  "license": "None",
+  "dependencies": {
+    "express": "^4.16.2",
+    "fs": "0.0.1-security"
+  }
+}
