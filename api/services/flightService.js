@@ -59,12 +59,25 @@ function searchFlights(list, origin, destination) {
   return reducedFlights;
 }
 
+function convertToStringResponse(list, providerName) {
+  let stringResponses = [];
+  let stringResponse = "";
+  for (i = 0; i < list.length; i++) {
+    stringResponse += list[i].origin + "--->" + list[i].destination + " ( " + providerName + " ) " +  " ( " + list[i].departureTime + "---> " + list[i].destinationTime + " )" + "-" 
+      + list[i].price + "<br>";
+  }
+  return stringResponse;
+}
+
 function processFlights(flightList, origin, destination) {
   let flightListResponse = {
     provider1: [],
     provider2: [],
     provider3: []
   };
+  
+  let stringResponse = "";
+  
   flightList.provider1 = searchFlights(flightList.provider1, origin, destination);
   flightList.provider2 = searchFlights(flightList.provider2, origin, destination);
   flightList.provider3 = searchFlights(flightList.provider3, origin, destination);
@@ -76,13 +89,16 @@ function processFlights(flightList, origin, destination) {
   flightListResponse.provider1 = sort(flightList.provider1);
   flightListResponse.provider2 = sort(flightList.provider2);
   flightListResponse.provider3 = sort(flightList.provider3);
-
+  
+  stringResponse = "<p>" + convertToStringResponse(flightListResponse.provider1, "provider1") + "</p>";
+  stringResponse += "<p>" + convertToStringResponse(flightListResponse.provider2, "provider2") + "</p>";
+  stringResponse += "<p>" + convertToStringResponse(flightListResponse.provider3, "provider3") + "</p>";
+   
   if(flightList.provider1.length === 0 && flightList.provider2.length === 0 && flightList.provider3.length === 0) {
-    flightListResponse = {
-      message: "No flights present"
-    };
+    stringResponse = "No flights found for " + origin + "--->" + destination;
   }
-  return flightListResponse;
+  
+  return stringResponse;
 }
 
 exports.searchFlights = function({ origin, destination }) {

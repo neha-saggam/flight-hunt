@@ -1,4 +1,4 @@
-const PORT = process.env.FLIGHT_HUNT_PORT || '3000';
+const PORT = process.env.FLIGHT_HUNT_PORT || '3001';
 
 var express = require('express'),
   app = express(),

@@ -7,5 +7,11 @@ exports.searchFlights = function(req, res) {
     destination: req.params.destination
   }
   flightService.searchFlights(params)
-  .then((response) => res.status(200).json(response));
+  .then((response) => {
+    return res.format({
+      'text/html': function() {
+        res.send(response);
+      }
+    });
+});
 };
