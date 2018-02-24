@@ -2,7 +2,7 @@
 Allows user to search flights given origin and destination. Also, filters the list of flights based on price first and departure next.
 
 ## Manual Setup Prerequisites ##
-1. NodeJS
+1. NodeJS (npm version >= 3.10.8, node version >= 6.9.1)
 	
 	For CentOS7
   * yum install epel-release
